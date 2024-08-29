@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    restart: always
+    image: "postgres:10.4-alpine"
+    environment:
+      POSTGRES_DB: data-base-wmpv
+      POSTGRES_USER: data-base-wmpv
+      POSTGRES_PASSWORD: data-base-wmpv
+    ports:
+      - "5432:5432"
